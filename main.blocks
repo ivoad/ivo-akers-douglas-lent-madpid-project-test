@@ -1,1 +1,18 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="$X!3y{5uWuJ3r:3A)6a%" x="0" y="0"/></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="_e;r`kGiEC{Gk`b/~`f1">mySprite</variable><variable type="KIND_SpriteKind" id="kp(:zlZ*5lJn_`R?!_8h">Player</variable><variable type="KIND_SpriteKind" id="Qa$*FASkqh`?fruQ{arN">Projectile</variable><variable type="KIND_SpriteKind" id="[TzNp:Fh1;p8Nf9?d|,H">Food</variable><variable type="KIND_SpriteKind" id="=lTpb_bp/vKg5HqAn6|P">Enemy</variable></variables><block type="pxt-on-start" id="$X!3y{5uWuJ3r:3A)6a%" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="c!wjP6k,Z(mm]X1;tV5|"><value name="color"><shadow type="colorindexpicker" id="%6s^G+?AeW^aXP2h_n3B"><field name="index">9</field></shadow></value><next><block type="variables_set" id="LL]~V(mFvg^#%h=5L;gg"><field name="VAR" id="_e;r`kGiEC{Gk`b/~`f1">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="P=gOu,paKJ{Zl`t`?GTq"><value name="img"><shadow type="screen_image_picker" id="Cpt{~_*Aqux?S)]QoN)2"><field name="img">img`
+. . d d d d d d d d d d d . . . 
+. . d d d 5 5 5 5 5 5 5 5 . . . 
+. . 5 5 5 5 5 5 5 5 5 5 5 5 . . 
+. 5 5 5 5 5 3 3 3 3 3 5 5 5 5 . 
+5 5 5 3 3 3 3 3 3 3 3 3 5 5 5 . 
+5 5 5 3 3 f 3 3 3 3 f 3 3 5 5 . 
+5 5 3 3 3 3 3 f 3 3 3 3 3 5 5 5 
+5 3 3 3 3 3 3 3 3 3 3 3 3 3 5 5 
+5 3 3 3 3 f f 3 f f 3 3 3 5 5 5 
+5 5 3 3 3 3 f f f 3 3 3 5 5 5 5 
+5 5 5 5 3 3 3 3 3 5 5 5 5 5 . . 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 . . 
+. 5 5 5 5 5 5 5 5 5 5 5 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="iZoc$-*Kh=WvSPZ?KGgK"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="?|2Ig4ph$Y0?@~@K76Pe"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="${YG()e^~{P`?}6D=xFY"><field name="VAR" id="_e;r`kGiEC{Gk`b/~`f1">mySprite</field></block></value><value name="vx"><shadow type="math_number" id="Scxn7[D@[{!bFetNMX#("><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="QVgPvFM[/6-##__Wa-uf"><field name="NUM">100</field></shadow></value></block></next></block></next></block></statement></block></xml>
