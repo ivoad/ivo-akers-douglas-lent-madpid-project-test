@@ -10,6 +10,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     info.changeScoreBy(1)
     music.powerUp.play()
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    info.changeScoreBy(-10)
+    music.powerDown.play()
+})
 scene.setBackgroundColor(9)
 let mySprite = sprites.create(img`
     . . d d d d d d d d d d d . . . 
