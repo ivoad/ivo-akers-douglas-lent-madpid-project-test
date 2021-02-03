@@ -88,7 +88,7 @@ let mySprite2 = sprites.create(img`
 info.startCountdown(60)
 effects.clouds.startScreenEffect()
 tiles.setTilemap(tilemap`level1`)
-mySprite.setStayInScreen(false)
+mySprite.setStayInScreen(true)
 scene.cameraFollowSprite(mySprite)
 let myEnemy = sprites.create(img`
     ........................
@@ -170,7 +170,7 @@ game.onUpdateInterval(5000, function () {
     mySprite2.setPosition(randint(0, 500), randint(0, 500))
 })
 game.onUpdateInterval(5000, function () {
-    myEnemy.setPosition(randint(0, 500), randint(0, 500))
+    mySprite4.setPosition(randint(0, 500), randint(0, 500))
 })
 game.onUpdateInterval(5000, function () {
     mySprite4.setPosition(randint(0, 500), randint(0, 500))
