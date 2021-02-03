@@ -1,7 +1,3 @@
-scene.onOverlapTile(SpriteKind.Player, sprites.castle.shrub, function (sprite, location) {
-    info.changeScoreBy(-0.1)
-    music.powerDown.play()
-})
 info.onCountdownEnd(function () {
     effects.confetti.startScreenEffect()
 })
@@ -465,7 +461,7 @@ effects.clouds.startScreenEffect()
 tiles.setTilemap(tilemap`level1`)
 mySprite.setStayInScreen(true)
 scene.cameraFollowSprite(mySprite)
-myEnemy.follow(mySprite, 50)
+myEnemy.follow(mySprite, 30)
 mySprite.setPosition(40, 40)
 game.onUpdateInterval(5000, function () {
     mySprite2.setPosition(randint(0, 500), randint(0, 500))
@@ -493,4 +489,7 @@ game.onUpdateInterval(5000, function () {
 })
 game.onUpdateInterval(5000, function () {
     mysprite_9.setPosition(randint(0, 500), randint(0, 500))
+})
+forever(function () {
+    music.playMelody("C - C G D G C D ", 120)
 })
