@@ -1,10 +1,9 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.shrub, function (sprite, location) {
-    info.changeScoreBy(-1)
+    info.changeScoreBy(-0.1)
     music.powerDown.play()
 })
 info.onCountdownEnd(function () {
     effects.confetti.startScreenEffect()
-    game.reset()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
@@ -467,7 +466,7 @@ tiles.setTilemap(tilemap`level1`)
 mySprite.setStayInScreen(true)
 scene.cameraFollowSprite(mySprite)
 myEnemy.follow(mySprite, 50)
-mySprite.setPosition(0, 0)
+mySprite.setPosition(40, 40)
 game.onUpdateInterval(5000, function () {
     mySprite2.setPosition(randint(0, 500), randint(0, 500))
 })
